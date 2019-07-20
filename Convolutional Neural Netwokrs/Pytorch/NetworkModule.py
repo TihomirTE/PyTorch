@@ -7,7 +7,7 @@ class Network(nn.Module):
         self.fc1 = nn.Linear(784, 128)
         self.fc2 = nn.Linear(128, 64)
         # Output layer, 10 units - one for each digit
-        self.fc3 = nn.Linear(64, 10)
+        self.fc3 = nn.Linear(64, 20)
 
     def forward(self, x):
         x = self.fc1(x)
